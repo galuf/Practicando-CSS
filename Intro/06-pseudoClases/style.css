@@ -1,0 +1,27 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+/* las seudoclases se usan con : */
+ul li:first-child {
+  /* aplicnado al primer hijo del listado */
+  color: purple;
+}
+
+ul li:nth-child(3) {
+  /*Indicamies el elemento de la lista*/
+  color: aqua;
+}
+
+ul li:last-child {
+  color: yellow;
+  font-weight: bold;
+}
+
+input[type="text"]:focus {
+  border: 5px solid rgb(92, 141, 216);
+}

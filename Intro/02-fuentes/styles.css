@@ -1,0 +1,31 @@
+/*Para importar una fuente descargada en nuestro proyecto*/
+@font-face {
+  font-family: LexendCustome;
+  src: url(fonts/Lexend_Mega/LexendMega-Regular.ttf);
+}
+
+h1 {
+  font-family: LexendCustome;
+
+  /*Manejo de colores*/
+  /*Colores del Sistema*/
+  color: mediumpurple;
+  /*Colores Hexadecimal*/
+  color: #db1919;
+  /*Colores RGB*/
+  color: rgb(255, 225, 107);
+  /*Colores RGBA*/
+  color: rgba(255, 225, 107, 0.5);
+}
+
+/*Estamos usando una fuente linkeada desde google fonts en index*/
+h3 {
+  font-family: "Sriracha";
+  font-size: 25px;
+  color: olive;
+}
+
+p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}

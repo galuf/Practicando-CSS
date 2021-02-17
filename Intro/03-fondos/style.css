@@ -1,0 +1,26 @@
+body {
+  background-color: #ccc;
+  background-image: url("img/patrion1.jpg");
+
+  /* para que el texto se ponga sin espacion sobrente = */
+  text-align: justify;
+}
+
+#caja {
+  border: 5px black solid;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-family: "Open Sans";
+
+  text-align: center;
+  /* si existe mas de una linea la altura de linea se define como:  */
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: red;
+  background-color: white;
+  border: 5px black solid;
+}

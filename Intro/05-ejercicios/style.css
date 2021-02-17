@@ -1,0 +1,132 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#general {
+  width: 1200px;
+  margin: 0px auto; /*Centra todo el contenedor*/
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(15, 18, 236);
+  color: white;
+  text-align: center;
+  line-height: 110px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+#menu ul li {
+  display: block;
+  float: left;
+  background-color: #eee;
+  border-right: 1px solid #ccc;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #444;
+}
+
+#menu ul li:hover {
+  /*:hover es una pseudoclase*/
+  background: rgb(15, 18, 236);
+}
+
+#menu ul li:hover a {
+  color: white;
+}
+
+#contenido {
+  width: 69%;
+  float: left;
+}
+
+#lateral {
+  width: 30%;
+  border: 1px solid red;
+  float: left;
+  max-height: 500px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+#contenido > h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 15px;
+  color: #444;
+}
+
+#contenido .caja {
+  color: white;
+  width: 40%;
+  height: 280px;
+  background-color: #ccc;
+  border: 1px solid #444;
+  float: left;
+  margin: 20px;
+  margin-left: 40px;
+  text-align: center;
+  box-shadow: 0px 0px 15px gray;
+  line-height: 250px;
+  border-radius: 50%;
+}
+
+footer {
+  width: 100%;
+  height: 55px;
+  line-height: 65px;
+  background: #eee;
+  text-align: center;
+  color: #444;
+}
+
+.libre {
+  /* poner un elemento donde queramos de manera flotada, esto es relativo al padre en este caso es el body */
+  position: absolute;
+  /* top indica moverse desde la mas arriba hacia abajo */
+  top: 0px;
+  /* de izquierda hacia la derecha */
+  left: 50%;
+
+  border: 1px solid black;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+  /* miesntras mas grande sea el valor del z-index, mayor prioridad tendra para estar encima */
+  z-index: 1;
+}
+
+.libre1 {
+  top: 50%;
+}
+
+.libre2 {
+  top: 53%;
+  background-color: green;
+  z-index: 10;
+}
+
+.fija {
+  /* Fixed tiene el mismo comportamiento que absolute, pero esta se quedara fija (scroll) */
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+}
