@@ -17,6 +17,11 @@ body {
   src: url(fonts/nevis.eot);
 }
 
+@font-face {
+  font-family: Iconos;
+  src: url(fonts/websymbols-regular-webfont.ttf);
+}
+
 #cabecera {
   display: flex;
   flex-direction: column;
@@ -29,7 +34,7 @@ body {
   text-transform: uppercase;
   font-family: Nevis;
   letter-spacing: 3px;
-  text-shadow: 2px 0px gray;
+  text-shadow: 0px 2px 1px #333333;
   font-size: 40px;
   text-align: center;
 }
@@ -74,16 +79,27 @@ body {
 
 #navegacion > ul > li ul {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   top: 38px;
-}
-#navegacion > ul > li ul li {
   display: none;
-  list-style: none;
-  color: white;
-  padding: 10px;
-  border: 2px solid gray;
+  text-align: left;
+  width: 160px;
+  z-index: 1;
+}
+
+#navegacion > ul > li:hover > ul {
+  display: block;
+}
+
+#navegacion > ul > li:hover > ul > li {
+  background-color: #f2f1f0;
+  border: 1px solid #d6d6d6;
+  padding: 8px;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+#navegacion > ul > li:hover > ul > li:hover {
+  background-color: #71b053;
 }
 
 .clearfix {
@@ -265,6 +281,11 @@ body {
   position: relative;
 }
 
+.icon {
+  font-family: "Iconos";
+  margin-right: 3px;
+}
+
 #main {
   /* height: 500px; */
   width: 75%;
@@ -314,6 +335,14 @@ h2 {
   position: absolute;
   top: -20px;
   left: 20px;
+}
+
+.azul {
+  color: blue !important;
+}
+
+.naranja {
+  color: tomato !important;
 }
 
 footer {
