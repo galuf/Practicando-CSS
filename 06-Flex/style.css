@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Al hacer display flex, por defecto el axis es de fila
+por lo cual las cajas se comportaran como si hicieramos un float: left */
+
+/*Si ponemos display: inline-flex , la caja padre tomara el tamaño que ocupen los hijos
+similar a los elemetos en  display: inline*/
+
+.layout {
+  /* display: inline-flex; */
+  display: flex;
+
+  /*Opciones para flex-direction -> 
+  row(por defecto)
+  row-reverse -> revierte el orden de las cajas 
+  column -> disposicion columna
+  column-reverse -> disposicion como columna pero con las cajas en reversa
+  */
+  flex-direction: row;
+
+  /*Si tenemos mas elementos de los que puede contenes nestra caja padre,
+  estos se desbordaran, esto es debido a la propiedad por defecto de flex-wrap*/
+
+  /* flex-wrap: nowrap; -> Por defecto, para evitar el desborde y hacer que las cajes se situen por defecto usamos: */
+
+  flex-wrap: wrap;
+
+  /* Usando flex-flow: (flex-direction) (flex-wrap) -> podemos escribir en una sola linea esos dos comandos*/
+
+  border: 3px solid black;
+  padding: 5px;
+}
+
+/*Flex Grow, esta propiedad se aplica a los hijos de una caja flex
+  indica como va a crecer, el valor que le indicamos a cada hijo sera
+  una proporcion de crecimiento
+  flecx-grow:0 -> es un valor por defecto, (no crecer)
+  si a todos los hijos le damos : flex-grow:1 -> estos creceran proporcionalmente de la misma forma
+*/
+
+.caja {
+  background: gray;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  margin: 10px;
+
+  flex-grow: 1;
+}
+
+/* las cajas hijas de una caja Flex, se pueden ordenar con la propiedad order 
+  tener en cuenta que cunato menos se le asigne el order, se pondra mas adelante
+  si alguna caja hija se deja sin order, por defecto toma un valor order pequeño por lo
+  puede q se ubique primera, para evitar eso y asegurar las posiciones se puede establecer
+  order con valores negativos
+*/
+.red {
+  order: 2;
+  background: red;
+  /* flex-grow: 2; Esta caja sera el doble de tamaño de las cajas que tienen 1 */
+}
+
+.blue {
+  order: 3;
+  background: blue;
+}
+.orange {
+  order: 1;
+  background: orange;
+}
+.green {
+  order: 4;
+  background: green;
+  /* La caja verde tomara el 100%  */
+  flex-basis: 100%;
+}
+
+/* Flex-basis: indica un tamaño base de las cajas  */
