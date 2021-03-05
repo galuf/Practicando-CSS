@@ -1,0 +1,82 @@
+.cara {
+  width: 100px;
+  height: 100px;
+  background: #333;
+  padding: 10px;
+  margin: 15px;
+}
+
+.punto {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.cara1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cara2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cara2 .punto:nth-child(2) {
+  align-self: flex-end;
+}
+
+.cara3 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.cara3 .punto:nth-child(2) {
+  align-self: center;
+}
+
+.cara3 .punto:nth-child(3) {
+  align-self: flex-end;
+}
+
+.cara4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cara4 .columna {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cara5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cara5 .columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cara5 .columna:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cara6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cara6 .columna {
+  display: flex;
+  justify-content: space-between;
+}

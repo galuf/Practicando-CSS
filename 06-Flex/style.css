@@ -36,7 +36,12 @@ similar a los elemetos en  display: inline*/
 
 /*Flex Grow, esta propiedad se aplica a los hijos de una caja flex
   indica como va a crecer, el valor que le indicamos a cada hijo sera
-  una proporcion de crecimiento
+  una proporcion de crecimiento respecto al espacio disponible
+
+  Por ejemplo si tenemos un factor de crecimento de 1 en 3 cajas y de 2 en unsa caja
+  y un espacio disponible de 100px -> la proporcion sera de 100/5 = 20
+  donde las cajas con grow 1 creceran hasta 20 y la caja con grow 2 crecera hasta 40
+
   flecx-grow:0 -> es un valor por defecto, (no crecer)
   si a todos los hijos le damos : flex-grow:1 -> estos creceran proporcionalmente de la misma forma
 */
@@ -63,7 +68,6 @@ similar a los elemetos en  display: inline*/
 .red {
   order: 2;
   background: red;
-  /* flex-grow: 2; Esta caja sera el doble de tamaño de las cajas que tienen 1 */
 }
 
 .blue {
