@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrap {
+  width: 90%;
+  height: 100%;
+  box-shadow: 1px 1px 20px 1px #ccc;
+  margin: 40px auto;
+}
+
+.wrap header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrap header h1 {
+  display: flex;
+  align-items: center;
+}
+
+.wrap ul {
+  list-style: none;
+  display: flex;
+}
+
+.wrap ul li {
+  padding: 15px;
+}
+
+.wrap ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.principal {
+  display: flex;
+}
+
+#opciones {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+#opciones .titulo {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: auto;
+}
+
+.box-aside {
+  padding: 20px;
+  margin-top: 12px;
+  background: #eee;
+  color: #333;
+}
+
+#cards {
+  width: 70%;
+  height: 100%;
+  flex: 6;
+  padding: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cards .card {
+  margin: 10px;
+  flex-basis: 250px;
+  /* border: 1px solid black; */
+}
+
+#imagen {
+  width: auto;
+  height: 180px;
+  background-color: #cccccc;
+}
+
+#desc {
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+footer h2 {
+  font-size: 30px;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+}
