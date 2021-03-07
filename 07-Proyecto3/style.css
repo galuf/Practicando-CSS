@@ -12,6 +12,7 @@
 
 .wrap header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px;
   border-bottom: 1px solid #ccc;
@@ -25,6 +26,7 @@
 .wrap ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .wrap ul li {
@@ -42,6 +44,9 @@
 }
 
 #opciones {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 15px;
   font-size: 20px;
   text-align: center;
@@ -75,6 +80,7 @@
 #cards .card {
   margin: 10px;
   flex-basis: 250px;
+  flex-grow: 1;
   /* border: 1px solid black; */
 }
 
@@ -105,4 +111,62 @@ footer h2 {
 footer p {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 698px) {
+  .wrap header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .wrap header ul {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+  }
+
+  .wrap header ul li {
+    border: 1px solid #ccc;
+    flex-basis: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 551px) {
+  .principal {
+    flex-direction: column;
+  }
+
+  #opciones {
+    flex-direction: row;
+  }
+
+  .titulo {
+    flex-basis: 100%;
+  }
+
+  .box-aside {
+    flex-grow: 1;
+  }
+
+  #cards {
+    width: auto;
+    /* justify-content: center; */
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer h2 {
+    margin: 5px;
+  }
+
+  footer p {
+    margin-bottom: 5px;
+  }
 }
